@@ -1,7 +1,7 @@
 //variables
 
-var entireMeal = document.getElementById("entire-meal")
-var pot = document.querySelector(".pot")
+// var entireMeal = document.getElementById("entire-meal")
+// var pot = document.querySelector(".pot")
 
 //var body = document.querySelectorAll('body')
 
