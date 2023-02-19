@@ -102,6 +102,10 @@ label {
   font-family: 'Roboto';
 }
 
+h3 {
+  text-align: center;
+}
+
 .clear {
   height: 10%;
   width: 20%;
