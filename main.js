@@ -40,8 +40,8 @@ var rightBox = document.getElementById("right")
 //event listeners
 
 letsCookButton.addEventListener("click", showFoodItem)
-// clearButton.addEventListenrer("click", showMain)
-//window.addEventListener('load', loadPage)
+//clearButton.addEventListenrer("click", showMain)
+
 
 //functions
 
@@ -52,12 +52,21 @@ function getRandomIndex(array) {
 var mainItem = mainDish[getRandomIndex(mainDish)];
 var sideItem = side[getRandomIndex(side)];
 var desertItem = desert[getRandomIndex(desert)];
+var fullCoarse = `${mainItem} with a side of ${sideItem} and ${desertItem} for dessert!`
+
+function showMain() {
+  pot.classList.remove("hidden");
+  suggest.classList.add("hidden");
+  foodItem.classList.add("hidden");
+  clearButton.classList.add("hidden");
+}
 
 function showFoodItem(event) {
   event.preventDefault();
   pot.classList.add("hidden");
   suggest.classList.remove("hidden");
   foodItem.classList.remove("hidden");
+  clearButton.classList.remove("hidden")
     if (btn1.checked == true) {
       dish.innerText = `${sideItem}`;
   } else if (btn2.checked == true) {
@@ -65,15 +74,11 @@ function showFoodItem(event) {
   } else if (btn3.checked == true) {
       dish.innerText = `${desertItem}`;
   } else if (btn4.checked == true) {
-      dish.innerText = `${mainItem} with a side of ${sideItem} and ${desertItem} for dessert!`;
-      meal.push();
+      dish.innerText = `${fullCoarse}`
+      meal.push(fullCoarse);
   } else {
+    showMain()
     alert("no item selected")
   }
 }
 
-// function showMain() {
-//   pot.classList.remove("hidden");
-//   suggest.classList.add("hidden");
-//   foodItem.classList.add("hidden");
-// }
