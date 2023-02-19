@@ -1,3 +1,5 @@
+// data
+
 var side = [
   "Garlic Mashed Potatoes",
   "Roasted Green Beans",
@@ -22,43 +24,39 @@ var desert = [
   "Raspberry Cheesecake"
 ];
 
-var meal = []
+var meal = [];
 
 //variables
+
 var dish = document.querySelector("#food-item");
-var pot = document.querySelector(".pot")
-var letsCookButton = document.querySelector(".lets-cook")
-var foodItem = document.querySelector("#food-item")
-var suggest = document.querySelector("#suggest")
-var clearButton = document.querySelector(".clear")
-var btn1 = document.getElementById("side")
-var btn2 = document.getElementById("main-dish")
-var btn3 = document.getElementById("desert")
-var btn4 = document.getElementById("entire-meal")
-var rightBox = document.getElementById("right")
-
-//event listeners
-
-letsCookButton.addEventListener("click", showFoodItem)
-//clearButton.addEventListenrer("click", showMain)
-
-
-//functions
-
-//fullCoarse = (mainDish[getRandomIndex(mainDish)]) + " with a side of " + (side[getRandomIndex(side)]) + " and " + (quotes[getRandomIndex(quotes)])
-function getRandomIndex(array) {
-  return Math.floor(Math.random() * array.length);
-}
+var pot = document.querySelector(".pot");
+var letsCookButton = document.querySelector(".lets-cook");
+var foodItem = document.querySelector("#food-item");
+var suggest = document.querySelector("#suggest");
+var btn1 = document.getElementById("side");
+var btn2 = document.getElementById("main-dish");
+var btn3 = document.getElementById("desert");
+var btn4 = document.getElementById("entire-meal");
+var rightBox = document.getElementById("right");
 var mainItem = mainDish[getRandomIndex(mainDish)];
 var sideItem = side[getRandomIndex(side)];
 var desertItem = desert[getRandomIndex(desert)];
-var fullCoarse = `${mainItem} with a side of ${sideItem} and ${desertItem} for dessert!`
+var fullCoarse = `${mainItem} with a side of ${sideItem} and ${desertItem} for dessert!`;
+
+//event listeners
+
+letsCookButton.addEventListener("click", showFoodItem);
+
+//functions
+
+function getRandomIndex(array) {
+  return Math.floor(Math.random() * array.length);
+}
 
 function showMain() {
   pot.classList.remove("hidden");
   suggest.classList.add("hidden");
   foodItem.classList.add("hidden");
-  clearButton.classList.add("hidden");
 }
 
 function showFoodItem(event) {
@@ -66,16 +64,19 @@ function showFoodItem(event) {
   pot.classList.add("hidden");
   suggest.classList.remove("hidden");
   foodItem.classList.remove("hidden");
-  clearButton.classList.remove("hidden")
     if (btn1.checked == true) {
       dish.innerText = `${sideItem}`;
+      btn1.checked = false;
   } else if (btn2.checked == true) {
       dish.innerText = `${mainItem}`;
+      btn2.checked = false;
   } else if (btn3.checked == true) {
       dish.innerText = `${desertItem}`;
+      btn3.checked = false;
   } else if (btn4.checked == true) {
-      dish.innerText = `${fullCoarse}`
-      meal.push(fullCoarse);
+    dish.innerText = `${fullCoarse}`
+    btn4.checked = false;
+    meal.push(fullCoarse);
   } else {
     showMain()
     alert("no item selected")
