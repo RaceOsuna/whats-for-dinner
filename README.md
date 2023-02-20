@@ -9,7 +9,7 @@ This web application allows the user to pick between 4 options. A side dish, mai
 Clone the repository.
 
 ### Preview of App: 
-https://imgflip.com/gif/7bv0tm
+[(https://i-download.imgflip.com/7bv0tm.gif)](https://i-download.imgflip.com/7bv0tm.gif)
 
 ### Context: 
 The project overall was finished about 5 days after receiving it and I am 3 weeks into the Turong program. I believe it could have been completed sooner with more features if personal issues hadn't been a factor.
