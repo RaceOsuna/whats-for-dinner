@@ -16,7 +16,7 @@ var mainDish = [
   "Cajun VooDoo Pasta"
 ];
 
-var desert = [
+var dessert = [
   "Hot Fudge Sunday",
   "Creme brulee",
   "Tiramisu",
@@ -35,13 +35,13 @@ var foodItem = document.querySelector("#food-item");
 var suggest = document.querySelector("#suggest");
 var btn1 = document.getElementById("side");
 var btn2 = document.getElementById("main-dish");
-var btn3 = document.getElementById("desert");
+var btn3 = document.getElementById("dessert");
 var btn4 = document.getElementById("entire-meal");
 var rightBox = document.getElementById("right");
 var mainItem = mainDish[getRandomIndex(mainDish)];
 var sideItem = side[getRandomIndex(side)];
-var desertItem = desert[getRandomIndex(desert)];
-var fullCoarse = `${mainItem} with a side of ${sideItem} and ${desertItem} for dessert!`;
+var dessertItem = dessert[getRandomIndex(dessert)];
+var fullCoarse = `${mainItem} with a side of ${sideItem} and ${dessertItem} for dessert!`;
 
 //event listeners
 
@@ -71,15 +71,15 @@ function showFoodItem(event) {
       dish.innerText = `${mainItem}`;
       btn2.checked = false;
   } else if (btn3.checked == true) {
-      dish.innerText = `${desertItem}`;
+      dish.innerText = `${dessertItem}`;
       btn3.checked = false;
   } else if (btn4.checked == true) {
-    dish.innerText = `${fullCoarse}`
-    btn4.checked = false;
-    meal.push(fullCoarse);
+      dish.innerText = `${fullCoarse}`
+      btn4.checked = false;
+      meal.push(fullCoarse);
   } else {
-    showMain()
-    alert("no item selected")
+      showMain()
+      alert("Please Select an Option")
   }
 }
 
