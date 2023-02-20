@@ -9,7 +9,7 @@ This web application allows the user to pick between 4 options. A side dish, mai
 Clone the repository.
 
 ### Preview of App: 
-[Preview!](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZGE1NWZjMGQ4ZTU4YjA3YWMzYzEyNmRiNjU0MzE0YzIzZmYxMWQ5MiZjdD1n/BPGTXbHSBnA2z4n7iP/giphy.gif)
+!(https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZGE1NWZjMGQ4ZTU4YjA3YWMzYzEyNmRiNjU0MzE0YzIzZmYxMWQ5MiZjdD1n/BPGTXbHSBnA2z4n7iP/giphy.gif)
 
 ### Context: 
 The project overall was finished about 5 days after receiving it and I am 3 weeks into the Turong program. I believe it could have been completed sooner with more features if personal issues hadn't been a factor.
