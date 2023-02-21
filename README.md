@@ -3,7 +3,7 @@
 # What's for Dinner? 
 
 ### Abstract: 
-This web application allows the user to pick between 4 options. A side dish, main dish, dessert or an entire meal. Depending on which option they select a random suggestion will be returned. If no option is selected an alert will be givennto "Please Select an Option".
+This web application allows the user to pick between 4 options. A side dish, main dish, dessert or an entire meal. Depending on which option they select a random suggestion will be returned. If no option is selected an alert will be given to "Please Select an Option".
 
 ### Installation Instructions: 
 Clone the repository.
