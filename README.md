@@ -28,4 +28,4 @@ The biggest challenge was creating the radio buttons and making only one of them
 The page also needs to be refreshed to give a differnt random suggestion which I wasn't able to find a fix for. I think I might need a "load" event. ???
 At one point I attempted to make a clear all button, but after creating an event listener for the button all of my suggestions would come back as undefined. So, I'm a bit confused about what I did wrong there.
 CSS and HTML are still tricky but it is starting to make sense.
-The biggest win is that I am continuing to grow and learn more every day! I thought resetting the radio buttons after each section was nice small touch, and making an alert was cool as well!
+The biggest win is that I am continuing to grow and learn more every day! I thought resetting the radio buttons after each selection was nice small touch, and making an alert was cool as well! I wish I could have experimented some more.
